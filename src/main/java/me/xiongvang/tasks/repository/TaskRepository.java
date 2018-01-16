@@ -1,4 +1,7 @@
 package me.xiongvang.tasks.repository;
 
-public interface TaskRepository {
+import me.xiongvang.tasks.domain.Task;
+import org.springframework.data.repository.CrudRepository;
+
+public interface TaskRepository extends CrudRepository<Task,Long>{
 }
